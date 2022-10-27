@@ -15,6 +15,9 @@ def divide(a, z):
 
     return a / z
 
+def exponent(a, z):
+    
+    return a ** z
 
 
 
@@ -28,14 +31,16 @@ print("3.Multiplication")
 
 print("4.Division")
 
+print("5.Exponent")
+
 
 
 while True:
 
 
-    choice = input("Enter choice(1/2/3/4): ")
+    choice = input("Enter choice(1/2/3/4/5): ")
 
-    if choice in ('1', '2', '3', '4'):
+    if choice in ('1', '2', '3', '4', '5'):
 
         numb1 = float(input("Enter first number: "))
 
@@ -64,6 +69,11 @@ while True:
         elif choice == '4':
 
             print(numb1, "/", numb2, "=", divide(numb1, numb2))
+            
+            
+        elif choice == '5':
+
+            print(numb1, "^", numb2, "=", exponent(numb1, numb2))
 
         break
 
